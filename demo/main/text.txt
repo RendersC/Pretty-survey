@@ -1,0 +1,4 @@
+A1:Alex  A2:98765  A3:red A4:yes A5gljwnkdf
+A1:NIGA  A2:69  A3:red A4:yes A5GOOD
+A1:КЕНТ  A2:15  A3:blue A4:no A5Ну хороши теперь сайт 
+A1:РњР•РќРЇ РєРµРЅС‚ Р·РѕРІСѓС‚  A2:1  A3:red A4:yes A5РќРЈ РќРћР РњРђРЎ

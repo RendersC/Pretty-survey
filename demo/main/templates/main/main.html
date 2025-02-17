@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+<form method="post" action="/saving/">
+    {% csrf_token %}
+    <label for="q1">1. Как вас зовут?</label><br>
+        <input type="text" id="q1" name="q1" required><br><br>
+
+        <label for="q2">2. Сколько вам лет?</label><br>
+        <input type="number" id="q2" name="q2" required><br><br>
+
+        <label for="q3">3. Ваш любимый цвет?</label><br>
+        <select id="q3" name="q3"> <!-- То есть id мы используем когда  -->
+            <option value="red">Красный</option>
+            <option value="blue">Синий</option>
+            <option value="green">Зелёный</option>
+            <option value="yellow">Жёлтый</option>
+            <option value="other">Другой</option>
+        </select><br><br>
+
+        <label for="q4">4. Вы любите путишествовать?</label>
+        <select id="q4" name="q4">
+            <option value="yes">YES</option>
+            <option value="no">NO</option>
+        </select><br><br>
+        <label for="q5">5. Напишите короткий отзыв о нашем сайте:</label><br>
+        <textarea id="q5" name="q5" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Отправить">
+</form>
+</body>
+</html>

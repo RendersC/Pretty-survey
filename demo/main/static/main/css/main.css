@@ -1,0 +1,83 @@
+/* 📌 Общие стили страницы */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 📌 Контейнер формы */
+form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+                -5px -5px 15px rgba(255, 255, 255, 0.6);
+    width: 380px;  /* Немного уменьшили */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* 📌 Заголовки */
+label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* 📌 Поля ввода */
+input, select, textarea {
+    width: calc(100% - 20px); /* Делаем симметричными */
+    padding: 12px;
+    margin: 10px auto; /* Добавляем авто-отступ */
+    display: block;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f0f0f3;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 📌 Эффект фокуса */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0px 0px 8px rgba(0, 140, 255, 0.5);
+}
+
+/* 📌 Кнопка */
+input[type="submit"] {
+    background: linear-gradient(135deg, #42a5f5, #478ed1);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* 📌 Эффект нажатия */
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #478ed1, #42a5f5);
+    box-shadow: 0px 5px 15px rgba(0, 140, 255, 0.4);
+}
+
+/* 📌 Адаптивность */
+@media (max-width: 450px) {
+    form {
+        width: 90%;
+    }
+}
